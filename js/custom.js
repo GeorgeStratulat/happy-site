@@ -53,8 +53,10 @@
 
 // var containerEl = document.querySelector('.projects');
 // var mixer = mixitup(containerEl);
+
+// NAVIGATION PANEL OPEN Function
+
 var menuIsOpen = 0;
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -67,7 +69,8 @@ function openNav() {
     document.getElementById("overlay-dark").style.display = "initial";
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+// NAVIGATION PANEL CLOSE Function
+
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
@@ -80,7 +83,7 @@ function closeNav() {
     document.getElementById("overlay-dark").style.display = "none";
 
 }
-
+// SETTING UP FOR TYPED.JS
 var typed = new Typed('.typed', {
     strings: ["developing.", "photography.", "coffee."],
     typeSpeed: 50,

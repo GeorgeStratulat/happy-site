@@ -12,13 +12,19 @@ NOTE:
 /*************************
       COLORS
 *************************/
-$darkBlue: #1d3435;
-$mainBlue: #19C9D1;
+$darkBlue: #74677C;
+$darkisColor: #352422;
+$nudeColor: #F5DEB7;
+$contColor: #9A6F6C;
+$mainColor: #E6A76E;
 $darkBg: rgba(0, 0, 0, 0.801);
 
 /*************************
       Navbar
 *************************/
+#navigation{
+    height: 85px;
+}
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -38,7 +44,7 @@ $darkBg: rgba(0, 0, 0, 0.801);
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color:$mainBlue;
+    color:$mainColor;
     display: block;
     transition: 0.3s;
 }
@@ -84,7 +90,7 @@ nav{
     font-weight: 900;
     font-size: 1.8rem; 
     letter-spacing: 2px;
-    color: black;
+    color: white;
     transition: all 0.4s;
 }
 .open-menu-btn{
@@ -97,7 +103,7 @@ nav{
    margin: none;
 }
 .color-mainBlue{
-    color: $mainBlue;
+    color: $mainColor;
     display: inline;
     padding: none;
     margin: none;
@@ -109,7 +115,7 @@ nav{
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: $mainBlue;
+    background-color: $mainColor;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -227,11 +233,7 @@ nav{
     height: 100%;
     width:100%; 
 }
-.carousel-caption h3,
-.carousel .icon-container,
-.carousel-caption button {
-    
-}
+
 .carousel-caption{
       top: 50%;
       transform: translateY(-50%);
@@ -299,14 +301,14 @@ nav{
     width: 50px;
     height: 5px;
     border-radius: 20px;
-    background: $mainBlue;
+    background: $mainColor;
     display: inline-block;
     margin-bottom: 5px;
 }
 .title-section{
     font-size: 20px;
     font-weight: 900;
-    color: $mainBlue;
+    color: $mainColor;
     padding-top: 10px;
 }
 .content-section{
@@ -317,4 +319,17 @@ nav{
             display: inline;
         }
     }
+}
+
+.btn-booze{
+    background: $darkBlue;
+    border-color: $darkBlue;
+}
+.btn-booze:hover{
+    background: $nudeColor;
+    border-color: $nudeColor;
+    color: $darkisColor;
+}
+.bg-darkis{
+    background: $darkBg;
 }

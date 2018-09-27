@@ -14,8 +14,12 @@ NOTE:
 /*************************
       Navbar
 *************************/
-/* The side navigation menu */
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+#navigation {
+  height: 85px;
+}
+
+/* The side navigation menu */
 .sidenav {
   height: 100%;
   /* 100% Full-height */
@@ -44,7 +48,7 @@ NOTE:
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #19C9D1;
+  color: #E6A76E;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -102,7 +106,7 @@ nav {
   font-weight: 900;
   font-size: 1.8rem;
   letter-spacing: 2px;
-  color: black;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -119,7 +123,7 @@ nav {
 }
 
 .color-mainBlue {
-  color: #19C9D1;
+  color: #E6A76E;
   display: inline;
   padding: none;
   margin: none;
@@ -133,7 +137,7 @@ nav {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #19C9D1;
+  background-color: #E6A76E;
   margin: 6px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -204,8 +208,8 @@ nav {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#1d3435));
-  background-image: linear-gradient(#646464, #1d3435);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#74677C));
+  background-image: linear-gradient(#646464, #74677C);
   opacity: .8;
 }
 
@@ -226,8 +230,8 @@ nav {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#1d3435));
-  background-image: linear-gradient(#646464, #1d3435);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#74677C));
+  background-image: linear-gradient(#646464, #74677C);
   opacity: .8;
 }
 
@@ -248,8 +252,8 @@ nav {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#1d3435));
-  background-image: linear-gradient(#646464, #1d3435);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#74677C));
+  background-image: linear-gradient(#646464, #74677C);
   opacity: .8;
 }
 
@@ -347,7 +351,7 @@ nav {
   width: 50px;
   height: 5px;
   border-radius: 20px;
-  background: #19C9D1;
+  background: #E6A76E;
   display: inline-block;
   margin-bottom: 5px;
 }
@@ -355,7 +359,7 @@ nav {
 .title-section {
   font-size: 20px;
   font-weight: 900;
-  color: #19C9D1;
+  color: #E6A76E;
   padding-top: 10px;
 }
 
@@ -365,5 +369,20 @@ nav {
 
 .content-section .title .typed {
   display: inline;
+}
+
+.btn-booze {
+  background: #74677C;
+  border-color: #74677C;
+}
+
+.btn-booze:hover {
+  background: #F5DEB7;
+  border-color: #F5DEB7;
+  color: #352422;
+}
+
+.bg-darkis {
+  background: rgba(0, 0, 0, 0.801);
 }
 /*# sourceMappingURL=index.css.map */

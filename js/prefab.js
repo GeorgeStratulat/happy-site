@@ -9,8 +9,8 @@
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll >= 50) {
-        $(".navbar").addClass("bg-darkis");
+        $("#navigation").addClass("bg-darkis");
     } else {
-        $(".navbar").removeClass("bg-darkis");
+        $("#navigation").removeClass("bg-darkis");
     }
 });
