@@ -1,0 +1,320 @@
+/*
+
+Template:  NORA - Template HTML5/CSS3
+Author: alexiancu.com
+Version: 1.0.0
+Design and Developed by: Alex Iancu - Web & App Developer
+
+NOTE:  
+
+*/
+
+/*************************
+      COLORS
+*************************/
+$darkBlue: #1d3435;
+$mainBlue: #19C9D1;
+$darkBg: rgba(0, 0, 0, 0.801);
+
+/*************************
+      Navbar
+*************************/
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:$mainBlue;
+    display: block;
+    transition: 0.3s;
+}
+body{padding: 0; margin: 0;}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+  
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+nav{
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+}
+.logo-brand{
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem; 
+    letter-spacing: 2px;
+    color: black;
+    transition: all 0.4s;
+}
+.open-menu-btn{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+}
+#main{
+   padding: none;
+   margin: none;
+}
+.color-mainBlue{
+    color: $mainBlue;
+    display: inline;
+    padding: none;
+    margin: none;
+}
+.open-menu-btn{
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: $mainBlue;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -6px) ;
+    transform: rotate(45deg) translate(-9px, -6px) ;
+}
+.z-1{
+    z-index: -1;
+}
+#navigation{
+    transition: all 0.4s;
+    z-index: 100;
+}
+
+/*************************
+      CAROUSEL
+*************************/
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+.col{
+      padding: 0;
+      margin: 0;
+}
+.carousel-inner{
+      width: 100%;
+}
+.carousel{
+      width: 100%;
+}
+.carousel-item{
+    height: 100%;
+    width: 100%;
+}
+
+.bg-carousel-1{
+      /* The image used */
+    background-image: url("../assets/images/carousel-1.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bg-carousel-1:before {
+      content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(rgb(100, 100, 100),$darkBlue);
+      opacity: .8; 
+}
+.bg-carousel-2{
+      /* The image used */
+    background-image: url("../assets/images/carousel-2.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bg-carousel-2:before {
+      content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(rgb(100, 100, 100),$darkBlue);
+    opacity: .8; 
+}
+.bg-carousel-3{
+      /* The image used */
+    background-image: url("../assets/images/carousel-3.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bg-carousel-3:before {
+      content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background-image: linear-gradient(rgb(100, 100, 100),$darkBlue);
+      opacity: .8; 
+}
+.carousel-indicators {
+    bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-item {
+    min-height: 800px; 
+    height: 100%;
+    width:100%; 
+}
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+    
+}
+.carousel-caption{
+      top: 50%;
+      transform: translateY(-50%);
+}
+.carousel-caption h3 {
+    padding: .7em;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+@media(max-width: 768px){
+      .carousel-caption h3{
+            font-size: 1.5rem;
+      }
+}
+.carousel .icon-container {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+}
+.carousel-caption button {
+    margin-top: 1em; 
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+    animation-delay: 1s;
+}
+.carousel-caption h3:nth-child(2) {
+    animation-delay: 2s;
+}
+.carousel-caption button {
+    animation-delay: 3s;
+}
+
+.carousel-holder{
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      min-width: 300px;
+      max-width: 100%;
+}
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.overlay-dark{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $darkBg;
+    z-index: 5;
+    display: none;
+}
+
+.line-divider{
+    width: 50px;
+    height: 5px;
+    border-radius: 20px;
+    background: $mainBlue;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.title-section{
+    font-size: 20px;
+    font-weight: 900;
+    color: $mainBlue;
+    padding-top: 10px;
+}
+.content-section{
+
+    .title{
+        font-size: 27.3px;
+        .typed{
+            display: inline;
+        }
+    }
+}
