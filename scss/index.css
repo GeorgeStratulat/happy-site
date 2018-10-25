@@ -385,4 +385,117 @@ nav {
 .bg-darkis {
   background: rgba(0, 0, 0, 0.801);
 }
+
+.image-about {
+  position: relative;
+}
+
+.image-about img {
+  width: 100%;
+  padding-left: 75px;
+  position: relative;
+  left: 50px;
+  z-index: 2;
+}
+
+.maxCircle {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  z-index: 0;
+  width: 400px;
+  height: 400px;
+  background: #E6A76E;
+  border-radius: 50%;
+  -webkit-box-shadow: 15px 10px 20px 5px #74677C;
+          box-shadow: 15px 10px 20px 5px #74677C;
+}
+
+#main {
+  margin: 0;
+  padding: 0;
+}
+
+.no-p-m {
+  padding: none;
+  margin: none;
+}
+
+.feature-holder {
+  position: relative;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.feature-holder .icon {
+  height: 150px;
+}
+
+.feature-holder .icon img {
+  position: absolute;
+  z-index: 0;
+  width: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.feature-holder .icon .icon-white-1 {
+  position: absolute;
+  z-index: 3;
+  display: initial;
+}
+
+.feature-holder .description {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: white;
+}
+
+.feature-section {
+  /* The image used */
+  background-image: url("../assets/images/feature-bg.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-holder:hover .icon-white-1 {
+  display: none;
+}
+
+.feature-holder:hover {
+  background: #F5DEB7;
+}
+
+.feature-holder:hover .title {
+  color: #352422;
+}
+
+.feature-holder:hover .description {
+  color: #352422;
+}
+
+.feature-holder .title {
+  color: white;
+  text-align: center;
+}
+
+.feature-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#74677C));
+  background-image: linear-gradient(black, #74677C);
+  opacity: 1;
+}
 /*# sourceMappingURL=index.css.map */

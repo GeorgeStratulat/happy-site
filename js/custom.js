@@ -85,8 +85,8 @@ function closeNav() {
 }
 // SETTING UP FOR TYPED.JS
 var typed = new Typed('.typed', {
-    strings: ["developing.", "photography.", "coffee."],
-    typeSpeed: 50,
+    strings: ["party.", "cocktails.", "coffee."],
+    typeSpeed: 70,
     loop: true
 });
 

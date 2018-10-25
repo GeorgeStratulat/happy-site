@@ -333,3 +333,96 @@ nav{
 .bg-darkis{
     background: $darkBg;
 }
+.image-about{
+    position: relative;
+    img{
+        width: 100%;
+        padding-left: 75px;
+        position: relative;
+        left: 50px;
+        z-index: 2;
+    }
+}
+.maxCircle{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 0;
+    width: 400px;
+    height: 400px;
+    background: $mainColor;
+    border-radius: 50%;
+    box-shadow: 15px 10px 20px 5px $darkBlue;
+}
+#main{
+    margin: 0;
+    padding: 0;
+}
+.no-p-m{
+    padding: none;
+    margin: none;
+}
+.feature-holder{
+    position: relative;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: all 0.2s;
+    .icon{
+        height: 150px;
+        img{
+            position: absolute;
+            z-index: 0;
+            width: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .icon-white-1{
+            position: absolute;
+            z-index: 3;
+            display: initial;
+        }
+    }
+    .description{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 13px;
+        color: white;
+    }
+  
+}
+.feature-section{
+      /* The image used */
+    background-image: url("../assets/images/feature-bg.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.feature-holder:hover .icon-white-1{
+        display: none;
+}
+.feature-holder:hover{
+       background: $nudeColor;
+}
+.feature-holder:hover .title{
+      color: $darkisColor;
+}
+.feature-holder:hover .description{
+      color: $darkisColor;
+}
+.feature-holder .title{
+    color: white;
+    text-align: center;
+}
+.feature-section:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(rgb(0, 0, 0),$darkBlue);
+    opacity: 1; 
+}
