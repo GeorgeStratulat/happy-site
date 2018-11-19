@@ -11,7 +11,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BOOZE. - Theme</title>
+    <title>Happy Hour</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/logo-phne.png" sizes="20x20">
 
     <!-- =========================== STYLES =========================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -22,17 +23,31 @@
     <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css'>
     <link rel="stylesheet" href="css/prefab.css">
     <link rel="stylesheet" href="scss/index.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBTh8NmK5EaFglSZVWdZy6WmdMO2H8fTwo",
+    authDomain: "happy-hour-87349.firebaseapp.com",
+    databaseURL: "https://happy-hour-87349.firebaseio.com",
+    projectId: "happy-hour-87349",
+    storageBucket: "happy-hour-87349.appspot.com",
+    messagingSenderId: "1049874210208"
+  };
+  firebase.initializeApp(config);
+</script>
+
 </head>
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="logo-brand pt-50" id="logo-brand">
-            <div class="color-mainBlue">
-                B
-            </div>
-            OOZE.
-        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+        <div class="logo-brand" id="logo-brand">
+            <img src="/assets/logo/logo2.png" id="logo-nav" alt="Logo">
+            
+         </div>
         <a href="#" class="mt-100">About</a>
         <a href="#">Features</a>
         <a href="#">Services</a>
@@ -42,10 +57,8 @@
     </div>
     <nav id="navigation">
         <div class="logo-brand" id="logo-brand">
-            <div class="color-mainBlue">
-                B
-            </div>
-            OOZE.
+            
+            <img src="/assets/images/Untitled-1.png" id="logo-nav" alt="Logo">
         </div>
         <div class="open-menu-btn" onclick="openNav(this)" id="btn-menu">
             <div class="bar1"></div>
@@ -75,12 +88,15 @@
                             <div class="carousel-item active bg-carousel-1">
                                 <div class="carousel-caption d-md-block">
                                     <h3 data-animation="animated bounceInLeft">
-                                        We provide the best
+                                        DESCOPERĂ EXPERIENȚE NOI ȘI 
                                     </h3>
                                     <h3 data-animation="animated bounceInRight">
-                                        solutions for you
+                                         BĂUTURI GRATUITE ÎN JURUL TĂU
                                     </h3>
-                                    <button class="btn btn-primary btn-booze" data-animation="animated zoomInRight" id="scroll-contact">Discover</button>
+                                    <br/>
+
+                                   <img data-animation="animated bounceInLeft"  src="/assets/images/google-play-badge.png" alt="" style="height:100px; width: 300px;">
+                                   <img data-animation="animated bounceInRight" src="/assets/images/download_apple.png" alt="" style="height:100px; width: 300px;">
 
                                 </div>
                             </div>
@@ -89,11 +105,12 @@
                             <div class="carousel-item bg-carousel-2">
                                 <div class="carousel-caption d-md-block">
                                     <h3 class="icon-container" data-animation="animated bounceInDown">
-                                        <span class="fa fa-heart fa-2x"></span>
+                                        <span class="fa fa-glass-martini fa-2x"></span>
                                     </h3>
-                                    <h3 data-animation="animated bounceInUp">
-                                        Get Best Business Solution For You
+                                    <h3 data-animation="animated bounceInDown">
+                                        PETRECEȚI VIAȚA DE NOAPTE ALĂTURI DE
                                     </h3>
+                                    <h3 data-animation="animated bounceInDown">HAPPY NIGHT</h3>
                                     <button class="btn btn-primary btn-booze" data-animation="animated zoomInRight" id="scroll-contact">Show
                                         More</button>
                                 </div>
@@ -133,37 +150,30 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-
                             <div class="title-section">
                                 <div class="line-divider">
-                                </div> ABOUT US.
+                                </div> DESPRE NOI
                             </div>
-
                             <div class="content-section mt-50">
                                 <div class="title">
-                                    We are modern & <br>
-                                    special for
+                                    Specialitea noastra? <br>
                                     <div class="typed"></div>
                                 </div>
                                 <div class="description pt-20">
-                                    Lorem ipsum dolor amet freegan tumeric cornhole four loko tacos drinking vinegar
-                                    before they sold out. Shoreditch la
-                                    croix man bun cardigan venmo jean shorts small batch etsy craft beer pork belly.
-                                    Snackwave paleo 90's, chambray pork
-                                    belly single-origin coffee VHS scenester tilde vexillologist godard kale chips
-                                    pickled chillwave. 90's selvage pop-up,
-                                    taiyaki echo park disrupt four dollar toast.
+                                    Primul concept de acest fel din tara. Aducem iesitul in oras mai aproape de tine 
+                                    oferindu-ti o bautura gratuita in fiecare zi. Fii primul care afla de cele mai noi bauturi si 
+                                    oferte puse la dispozitie de partenerii nostri.
                                 </div>
                                 <div class="line-divider mt-20">
                                 </div>
                                 <div class="button mt-20">
-                                    <div class="btn btn-primary btn-booze">Discover more.</div>
+                                    <div class="btn btn-primary btn-booze">
+                                        <a href="/html/intrebari.html"> Mai multe detalii </a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 image-about">
                             <div class="maxCircle">
-
                             </div>
                             <img src="assets/images/demo-img-1.png" alt="">
                         </div>
@@ -175,7 +185,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 title-section mt-50">
-                         <center>FEATURES</center>
+                         <center>CARACTERISTICI</center>
                         <center>
                             <div class="line-divider"></div>
                         </center>
@@ -231,15 +241,47 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <div class="container" id="contact_us">
+                    <div class="col-md-12 title-section mt-50">
+                            <center>COMUNITATEA</center>
+                           <center>
+                               <div class="line-divider"></div>
+                           </center>
+                       </div>
+            <img id="img_contact" src="/assets/images/facebook-logo.png" alt=""  >
+            <img id="img_contact" src="/assets/images/instagram-logo-1.png" alt="" >
+            <img  id="img_contact" src="/assets/images/email-icon.png" >
+            <br>
+            <br>
+            <br>
+            <div class="container" id="contact_us">
+                <p id="">
+                    <a href="#">Home</a>
+                      |  
+                      <a href="#">Blog</a>
+                      |  
+                    <a href="#">About</a>
+                      |
+                    <a href="#">Termeni & conditii</a>  
 
+                </p>
+                <p>Happy Hour &copy; 2018</p>
+            </div>
+        </div>
         </div>
     </div>
     <!-- END PAGE -->
+    
+
     </div>
 
 
 
     <!-- =========================== SCRIPTS =========================== -->
+    
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.countTo.js"></script>
