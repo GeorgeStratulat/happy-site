@@ -5,12 +5,3 @@
 
 // NOTE:  
 
-
-$(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 50) {
-        $("#navigation").addClass("bg-darkis");
-    } else {
-        $("#navigation").removeClass("bg-darkis");
-    }
-});

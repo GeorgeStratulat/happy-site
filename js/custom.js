@@ -43,30 +43,37 @@
     });
 })(jQuery);
 
-// // COUNT
-
-
-// $('.timer').countTo();
-
-
-// // MIX
-
-// var containerEl = document.querySelector('.projects');
-// var mixer = mixitup(containerEl);
-
-// NAVIGATION PANEL OPEN Function
-
 var menuIsOpen = 0;
+
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginRight = "250px";
-    document.getElementById("navigation").style.marginRight = "250px";
-    // document.body.style.backgroundColor = "rgba(0,0,0,0.8)";
-    document.getElementById("btn-menu").classList.add("change");
-    var logoBrand = document.getElementsByClassName("logo-brand");
-    logoBrand[0].style.color = "white";
-    logoBrand[1].style.opacity = "0";
-    document.getElementById("overlay-dark").style.display = "initial";
+    if (menuIsOpen == 0) {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("navigation").style.marginRight = "250px";
+        document.getElementById("btn-menu").classList.add("change");
+
+        var logoBrand = document.getElementsByClassName("logo-brand");
+
+        logoBrand[0].style.color = "white";
+        logoBrand[1].style.opacity = "0";
+
+        document.getElementById("overlay-dark").style.display = "initial";
+
+        menuIsOpen = 1;
+    }else{
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("navigation").style.marginRight = "0";
+        document.getElementById("btn-menu").classList.remove("change");
+
+        var logoBrand = document.getElementsByClassName("logo-brand");
+
+        logoBrand[0].style.color = "black";
+        logoBrand[1].style.opacity = "1";
+
+        document.getElementById("overlay-dark").style.display = "none";
+
+        menuIsOpen = 0;
+    }
+
 }
 
 // NAVIGATION PANEL CLOSE Function
@@ -81,6 +88,7 @@ function closeNav() {
     logoBrand[0].style.color = "black";
     logoBrand[1].style.opacity = "1";
     document.getElementById("overlay-dark").style.display = "none";
+    menuIsOpen = 0;
 
 }
 // SETTING UP FOR TYPED.JS

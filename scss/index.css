@@ -15,34 +15,15 @@ NOTE:
       Navbar
 *************************/
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 #navigation {
   height: 85px;
 }
-#navig{
-  height:80px;
-}
-.container-questions{
-  margin:auto;
-  width:100%;
-  
-  padding:10px;
-}
-.container-faq{
-  margin:auto;
-  width:70%;
-  
-  padding:80px;
-}
-.container-comunity{
-  
-}
 
-.questions-center{
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    padding: 10px;
-}
 /* The side navigation menu */
 .sidenav {
   height: 100%;
@@ -55,7 +36,7 @@ NOTE:
   /* Stay on top */
   top: 0;
   /* Stay at the top */
-  right: 0;
+  left: 0;
   background-color: #111;
   /* Black*/
   overflow-x: hidden;
@@ -72,7 +53,7 @@ NOTE:
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #fbcc00;
+  color: #E6A76E;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -92,7 +73,7 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 105px;
+  right: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -130,25 +111,9 @@ nav {
   font-weight: 900;
   font-size: 1.8rem;
   letter-spacing: 2px;
-  margin: -20 -20;
   color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  height:100px;
-    width:150px;
-
-    float:left;
-    position: relative;
-}
-
-.logo-brand img{
-  width: 1000px;
-  height: 800px;
-}
-
-#logo-nav{
-  width: 160px;
-  height: 77px;
 }
 
 .open-menu-btn {
@@ -177,7 +142,7 @@ nav {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #fbcc00;
+  background-color: #E6A76E;
   margin: 6px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -208,14 +173,6 @@ nav {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   z-index: 100;
-  background-color: transparent;
-}
-#navigation-questions {
-  height:90px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  z-index: 100;
-  background-color: black;;
 }
 
 /*************************
@@ -399,33 +356,15 @@ nav {
   width: 50px;
   height: 5px;
   border-radius: 20px;
-  background: #fbcc00;
+  background: #E6A76E;
   display: inline-block;
   margin-bottom: 5px;
 }
 
-
-
 .title-section {
   font-size: 20px;
   font-weight: 900;
-  color: #fbcc00;
-  padding-top: 10px;
-}
-
-.question{
-  font-size: 41px;
-  font-weight: 900;
-  color: #fbcc00;
-  padding-top: 10px;
-    
-}
-
-.title-faq{
-  font-size: 54px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-weight: 900;
-  color: #fbcc00;
+  color: #E6A76E;
   padding-top: 10px;
 }
 
@@ -435,15 +374,6 @@ nav {
 
 .content-section .title .typed {
   display: inline;
-}
-
-#contact_us{
-  text-align: center;
-}
-
-#img_contact{
- display: inline-block;
- padding:20px;
 }
 
 .btn-booze {
@@ -480,7 +410,7 @@ nav {
   z-index: 0;
   width: 400px;
   height: 400px;
-  background: #fbcc00;
+  background: #E6A76E;
   border-radius: 50%;
   -webkit-box-shadow: 15px 10px 20px 5px #74677C;
           box-shadow: 15px 10px 20px 5px #74677C;
@@ -531,27 +461,10 @@ nav {
   color: white;
 }
 
-.answer{
-  text-align:left;
-  margin-top: 10px;
-  font-size: 30px;
-  font-weight: 900;
-  color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
 .feature-section {
   /* The image used */
   background-image: url("../assets/images/feature-bg.jpg");
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.questions-section{
-  background-image: url("../assets/images/faq.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -591,5 +504,146 @@ nav {
   opacity: 1;
 }
 
+@media (max-width: 480px) {
+  .maxCircle {
+    width: 100px;
+    height: 100px;
+  }
+}
 
+.btn-booze {
+  background: #666666;
+  color: #ffc700 !important;
+  border: none;
+}
+
+a {
+  color: #ffc700 !important;
+  border: none;
+}
+
+#contact_us {
+  color: #ffc700 !important;
+  text-align: center !important;
+}
+
+.mainColor {
+  color: #ffc700 !important;
+}
+
+@media screen and (max-height: 850px) and (max-width: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    z-index: 9999;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  #navigation-questions {
+    z-index: 9998;
+    position: relative;
+  }
+  .col-md-12 {
+    padding-left: 40px !important;
+    padding-right: 40px;
+    text-align: center !important;
+  }
+  .container-faq {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+  }
+  .questions-section {
+    background-image: url("../assets/images/faq.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-background-size: cover;
+  }
+  .z-abs {
+    position: relative;
+    z-index: 1;
+  }
+  .title-faq {
+    font-size: 1.35em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: 900;
+    color: #fbcc00;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .question {
+    font-size: 1.20em;
+    font-weight: 900;
+    color: #fbcc00;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: 2px;
+    line-height: 95%;
+  }
+  .answer {
+    padding-left: 4px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 0.85em;
+    font-weight: 900;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    line-height: 95%;
+  }
+  #img_contact {
+    display: inline-block;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+  }
+  .container-contact {
+    text-align: center;
+    width: 100%;
+    height: 14%;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 4px;
+  }
+  .navigation-faq {
+    height: 6.5%;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: 100;
+    background-color: black;
+  }
+  .logo-brand {
+    float: left;
+    top: 55%;
+    height: 15px;
+    width: 20px;
+  }
+  .logo-brand img {
+    width: 65px;
+    height: 34px;
+  }
+  .open-menu-btn {
+    float: right;
+    margin-top: 3%;
+    margin-right: 7px;
+    right: 35px;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 3px;
+    background-color: #fbcc00;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
 /*# sourceMappingURL=index.css.map */
