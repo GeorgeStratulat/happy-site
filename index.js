@@ -9,6 +9,9 @@ app.get('/', function(req, res) {
 app.get('/contact', function(req, res) {
     res.sendFile(__dirname + "/html/contact.html");
 });
+app.get('/unsubscribe', function(req, res) {
+    res.sendFile(__dirname + "/html/unsubscribe.html");
+});
 app.listen(3000);
 app.use(express.static(__dirname));
 
