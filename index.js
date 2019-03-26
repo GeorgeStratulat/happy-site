@@ -6,6 +6,9 @@ var app = express();
 app.get('/', function(req, res) {
     res.sendFile(__dirname + "/index.html");
 });
+app.get('/intrebari', function(req, res) {
+    res.sendFile(__dirname + "/html/intrebari.html");
+});
 app.get('/contact', function(req, res) {
     res.sendFile(__dirname + "/html/contact.html");
 });
