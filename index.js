@@ -21,13 +21,13 @@ app.post('/contact', function(req,res){
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-               user: 'george.stratulat10@gmail.com',
-               pass: 'Universitate10'
+               user: 'contact@happy-hour.ro',
+               pass: 'KZfpRS43Eu4SRum'
            }
        });
        const mailOptions = {
-        from: req.body.email, // sender address
-        to: 'george.stratulat10@gmail.com', // list of receivers
+        from: "george.stratulat10@gmail.com", // sender address
+        to: 'contact@happy-hour.ro', // list of receivers
         subject: 'Subject of your email', // Subject line
         text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
       };
